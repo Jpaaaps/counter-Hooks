@@ -1,7 +1,4 @@
-LINK NETLIFY : https://app.netlify.com/sites/festive-golick-6b07ac/overview
-
-
-
+LINK NETLIFY :  https://festive-golick-6b07ac.netlify.app
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
