@@ -1,23 +1,23 @@
 import React, { useState } from 'react';
 
 function Counter() {
-    
-  const [ value, setValue] = useState();
+  const [count, setCount] = useState(0);
 
-function handleChange(event) {
-    setValue(event.target.value);
-}
+  const handleChange = (event) => {
+    setCount(Number(event.target.value))
+  }
 
   return (
     <div>
-        <input value={value} onChange={handleChange}/>
-        <p>Le compteur est  à : {value} </p>
-        <button onClick={() => setValue(value + 1)}>
-            +1
-        </button>
-        <button onClick={() => setValue(value - 1)}>
-            -1
-        </button>
+      <label>Saisie un nombre</label>
+      <input type="number" onChange={handleChange}></input>
+      <p>Le compteur est  à : {count} </p>
+      <button onClick={() => setCount(count + 1)}>
+        +1
+      </button>
+      <button onClick={() => setCount(count - 1)}>
+        -1
+      </button>
     </div>
   );
 }
